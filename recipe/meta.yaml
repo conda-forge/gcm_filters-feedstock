@@ -1,5 +1,5 @@
 {% set name = "gcm_filters" %}
-{% set version = "0.1.3" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c33bf22a3e533b24f55f2b82a947559b851d078e57c47c67fa1fbf1df620dfd2
+  sha256: e8b6cb49905b4494141b8bc05b3dfa5908c2ed09717e4edc18d8d4fd0c704cf9
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/ocean-eddy-cpt/gcm-filters
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE.txt
   summary: Diffusion-based Spatial Filtering of Gridded Data
