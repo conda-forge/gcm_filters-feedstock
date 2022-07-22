@@ -1,5 +1,5 @@
 {% set name = "gcm_filters" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8b6cb49905b4494141b8bc05b3dfa5908c2ed09717e4edc18d8d4fd0c704cf9
+  sha256: 68d50b011d0dd3113dd66a7fd6d1c81797cc70dfa812fb5a1b8d1a58f36f7208
 build:
   noarch: python
   number: 0
